@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>keyboard event</title>
+<script>
+	function show(event){
+	var  ch=event.which;
+	if(!(ch>=65 && ch<=90))
+    {
+	var str=t1.value;
+	t1.value=str.substring(0,(str.length-1));
+	t1.style.border="5px solid red";
+	alert("only alphabet is allowed");
+	}
+	else{
+	t1.style.border="5px solid green";
+}
+}		
+</script>
+</head>
+
+<body>
+Enter Letter:<input type=text id=t1 name=t1 onKeyUp=show(event)>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Local Storage Example</title>
+
+<script>
+function checkStorage() {
+    if (Storage) {
+             if(localStorage.bgColor)
+{
+document.body.style.backgroundColor=localStorage.bgColor;
+document.getElementById("c1").value = localStorage.bgColor;
+ }
+            if(localStorage.textColor)
+{
+document.getElementById("para1").style.color=localStorage.textColor;
+document.getElementById("c2").value = localStorage.textColor;
+}
+ } 
+else 
+{
+  alert("Local Storage not supported");
+}
+}
+
+function changeBgColor() {
+      document.body.style.backgroundColor =c1.value;
+    localStorage.bgColor =c1.value;
+}
+
+function changeTextColor() {
+       document.getElementById("para1").style.color = c2.value;
+    localStorage.textColor =c2.value;
+}
+</script>
+</head>
+
+<body onload="checkStorage()">
+<center>
+<pre>
+Choose Background Color : <input type="color" id="c1" onchange="changeBgColor()"><br>
+Choose Text Color       : <input type="color" id="c2" onchange="changeTextColor()">
+</pre>
+
+<hr style="height:7px; background-color:red;">
+
+<p id="para1">
+Hard work is the key to success in life and helps us achieve our goals.
+It teaches us discipline, patience, and the value of time.
+Nothing meaningful can be achieved without continuous effort and dedication.
+Hard work builds confidence and makes us stronger from within.
+Regular practice improves our skills and performance every day.
+Failures guide us to learn lessons and work harder next time.
+People who work hard are respected everywhere.
+Hard work turns dreams into reality with determination.
+Every small effort contributes to long-term success.
+Therefore, we should always work honestly and never give up.
+</p>
+</center>
+</body>
+</html>

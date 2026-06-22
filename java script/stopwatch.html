@@ -1,0 +1,108 @@
+<html>
+<head>
+<title>Stop watch</title>
+<style>
+ #text1{
+     height:50px;
+     width:50px;
+   font-size:40px;
+   text-align:right;
+   background-Color:pink;
+}
+ #text2{
+     height:50px;
+     width:50px;
+   font-size:40px;
+  text-align:right;
+  background-Color:cyan;
+}
+ #text3{
+     height:50px;
+     width:50px;
+   font-size:40px;
+  text-align:right;
+   background-Color:yellow;
+}
+
+</style>
+<script>
+     var ms = 0;
+     var sec = 0;
+     var min = 0;
+     var timer = null;
+    function settime(){
+
+	ms++;
+	if(ms>100){
+		ms=1;
+	}
+     document.getElementById("text3").value=ms;	
+   }
+
+	  function settime2(){
+            sec++;
+            if(sec>59){
+	    sec=0;
+}
+   document.getElementById("text2").value=sec;	
+
+}
+     function settime3(){
+
+	min++;
+        if(min>59){
+	min=0;
+}
+ var val=document.getElementById("text1").value=min;
+}
+
+    function timestart(){
+  if(timer!==null)return;
+  id1=setInterval(settime,10);
+ id2=setInterval(settime2,1000);
+ id3=setInterval(settime3,60000);
+}
+
+//button
+ 
+ function saverec(){
+      var m = document.getElementById("text1").value;
+    var s = document.getElementById("text2").value;
+    var ms = document.getElementById("text3").value;
+   document.getElementById("res1").innerHTML +="0"+
+        m + " : " + s + " : " + ms+"<br>";
+
+}
+ function deleterec(){
+  
+    clearInterval(id1);
+    clearInterval(id2);
+    clearInterval(id3);
+
+  document.getElementById("text1").value=00;
+document.getElementById("text2").value=00;
+document.getElementById("text3").value=00;
+ 
+document.getElementById("res1").innerHTML="";
+
+}
+
+</script>
+</head>
+<body>
+<center>
+<h1>!!Stopwatch!!</h><hr style="height:10px; width:300px; background-Color:blue;">
+<fieldset style="background-color:red;  width:200px;">
+<input type=text name=text1 id=text1 placeholder="00">
+<input type=text name=text2 id=text2 placeholder="00">
+<input type=text name=text3 id=text3 placeholder="00">
+<br><br><br>
+<div id=res1 style="font-size:40px;"></div>
+
+<input type=button value=Start id=b1 onClick="timestart()" style="height:40px;width:60px;font-size:22px;">
+<input type=button value=Stop id=b3 onClick="saverec()" style="height:40px;width:60px;font-size:22px;">
+<input type=button value=Reset id=b4 onClick="deleterec()"        style="height:40px;width:60px;font-size:19px;">
+</fieldset>
+</center>
+</body>
+</html>

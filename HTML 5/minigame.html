@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>moving ball</title>
+</head>
+<body>
+<center>
+<svg height="580" width="100%" style="border:3px solid black">
+<rect x=10 y=150 height=10 width=230  fill=yellow></rect>
+<rect x=395 y=165 height=10 width=150 fill=yellow></rect>
+<line x1=40 y1=340 x2=500 y2=260 stroke=yellow  stroke-width=10></line>
+<rect x=40 y=380 height=10 width=60 fill=yellow></rect>
+<rect x=90 y=420 height=10 width=180 fill=yellow></rect>
+<rect x=260 y=415 height=5 width=310 fill=green> 
+<animateTransform 
+    attributeName="transform" 
+    attributeType="XML"
+    type="rotate" 
+    from="0  420 420" 
+    to="50 420 420"
+    begin=4.3s 
+    dur="1s" 
+    repeatCount="1" 
+    fill=freeze />
+</rect>
+<circle cx=420 cy=426 r=7 stroke=black fill=gray></circle>
+<circle cx=480 cy=155 r=9 stroke=black fill=blue>
+<animatetransform attributename=transform type=translate  fill=freeze  begin=2s values=0,0;75,0;75,450 dur=3s></animatetransform>
+</circle>
+<circle cx=450 cy=255 r=9 stroke=black fill=red>
+<animatetransform attributename=transform type=translate  fill=freeze  begin=5.3s values=0,0;-420,72;-420,300 dur=2.5s keyTimes="0; 0.13; 1"></animatetransform>
+
+</circle>
+
+<rect x=40 y=371 height=9 width=3 fill=black>
+<animateTransform 
+    attributeName="transform" 
+    attributeType="XML"
+    type="rotate" 
+    from="0 45 395" 
+    to="20 45 395" 
+    begin=6s
+    dur="1s" 
+    repeatCount="1" 
+    fill=freeze />
+
+</rect>
+<rect x=47 y=371 height=9 width=3 fill=black>
+<animateTransform 
+    attributeName="transform" 
+    attributeType="XML"
+    type="rotate" 
+    from="0 52 395" 
+    to="20 52 395" 
+    dur="1s"
+    begin=6.3s 
+    repeatCount="1" 
+    fill=freeze />
+
+
+</rect>
+<rect x=53 y=371 height=9 width=3 fill=black>
+<animateTransform 
+    attributeName="transform" 
+    attributeType="XML"
+    type="rotate" 
+    from="0 58 395" 
+    to="20 58 395" 
+    dur="1s"
+    begin=6.5s 
+    repeatCount="1" 
+    fill=freeze />
+</rect>
+
+<rect x=59 y=371 height=9 width=3 fill=black>
+<animateTransform 
+    attributeName="transform" 
+    attributeType="XML"
+    type="rotate" 
+    from="0 64 395" 
+    to="20 64 395" 
+    dur="1s"
+    begin=6.6s 
+    repeatCount="1" 
+    fill=freeze />
+</rect>
+
+<rect x=65 y=371 height=9 width=3 fill=black>
+<animateTransform 
+    attributeName="transform" 
+    attributeType="XML"
+    type="rotate" 
+    from="0 69 395" 
+    to="20 69 395" 
+    dur="1s"
+    begin=6.7s 
+    repeatCount="1" 
+    fill=freeze />
+</rect>
+
+<rect x=71 y=371 height=9 width=3 fill=black>
+<animateTransform 
+    attributeName="transform" 
+    attributeType="XML"
+    type="rotate" 
+    from="0 76 395" 
+    to="20 76 395" 
+    dur="1s"
+    begin=6.8s 
+    repeatCount="1" 
+    fill=freeze />
+</rect>
+
+<rect x=77 y=371 height=9 width=3 fill=black>
+<animateTransform 
+    attributeName="transform" 
+    attributeType="XML"
+    type="rotate" 
+    from="0 82 395" 
+    to="20 82 395" 
+    dur="1s"
+    begin=6.9s 
+    repeatCount="1" 
+    fill=freeze />
+</rect>
+
+<rect x=83 y=371 height=9 width=3 fill=black>
+<animateTransform 
+    attributeName="transform" 
+    attributeType="XML"
+    type="rotate" 
+    from="0 88 395" 
+    to="20 88 395" 
+    dur="1s"
+    begin=7s 
+    repeatCount="1" 
+    fill=freeze />
+</rect>
+
+<circle cx=235 cy=375 r=30 fill=yellow opacity=0>
+<animate attributename="opacity" from=0 to=1 begin=9s dur=3s fill=freeze ></animate>
+</circle>
+
+<polygon points="215,400 225,370 225,370 245,370 245,370 255,400" stroke=black fill=gray ></polygon>
+<rect x=229 y=395 height=25 width=13 rx=3 ry=5 stroke=black fill=cyan></rect>
+<rect x=234 y=388 height=7 width=4 fill=black></rect>
+<rect x=110 y=410 height=2 width=120 fill=black></rect>
+<rect x=12 y=352 height=30 width=2 fill=green></rect>
+<polygon points="50,125 55,150 55,150 95,150" stroke=black fill=blue ></polygon>
+<g>
+
+<polyline points="110,135 103,150 103,150 145,140 145,140 110,135 110,135 104,120 104,120 144,139" stroke=black stroke-width=2 fill=none >
+</polyline>
+<animateTransform
+    attributeName="transform"
+    attributeType="XML"
+    type="translate"
+    from="0 0"
+    to="327 10"
+    begin=1s
+    dur="1s"
+    repeatCount="1" 
+    fill=freeze 
+/>
+
+</g>
+<rect x=60 y=50 height=60 width=18 stroke=black fill=red> 
+<animateTransform 
+    attributeName="transform" 
+    attributeType="XML"
+    type="rotate" 
+    from="0 60 100" 
+    to="120 60 100" 
+    dur="1s" 
+    repeatCount="1" 
+    fill=freeze />
+</rect>
+<rect x=95 y=410 height=10 width=14 stroke=red fill=red></rect>
+
+<text x=90 y=380 font-size=20>⚽
+
+<animateTransform
+    attributeName="transform"
+    attributeType="XML"
+    type="translate"
+    from="0 0"
+    to="0 38"
+    begin=8s
+    dur="1s"
+    repeatCount="1" 
+    fill=freeze 
+/>
+
+</text>
+</svg>
+</center>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>moving ball</title>
+</head>
+<body>
+<svg height="580" width="100%" style="border:3px solid black">
+<defs>
+<radialgradient id="lgrd" x1="0%" y1="0%" x2="100%" y2="0%" gradientTransform="rotate(0)">
+<stop offset="0%" stop-color="red"/>
+<stop offset="50%" stop-color="yellow"/>
+<stop offset="100%" stop-color="cyan"/>
+
+</radialgradient>
+</defs>
+<rect x="0" y="0" height="100%" width="100%" fill="url(#lgrd)"></rect>
+</rect>
+<circle cx=30 cy=300 r=30 fill=red>
+<animatetransform attributename=transform type=translate from=50 to=300 dur=3s fill=freeze values="0,0;650,-270;1280,0;650,260;0,0" repeatcount=indefinite></animate>
+</circle>
+<circle cx=30 cy=200 r=30 fill=red>
+<animatetransform attributename=transform type=translate from=50 to=300 dur=2s fill=freeze values="0,0;650,-170;1280,30;650,350;0,0" repeatcount=indefinite></animate>
+</circle>
+
+  </svg>
+</body>
+</html>

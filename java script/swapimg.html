@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>swap img</title>
+<script>
+function swap(){
+		
+	var t=img1.src;
+	img1.src=img2.src;
+	img2.src=img3.src;
+	img3.src=img4.src;
+	img4.src=t;
+}
+</script>
+</head>
+<body bgcolor=cyan>
+<center>
+<img src="C:\Users\Akhilesh\OneDrive\Desktop\web photo\d.jpg" height=150 width=150  id=img1>
+<img src="C:\Users\Akhilesh\OneDrive\Desktop\web photo\e.jpg" height=150 width=150 id=img2>
+<div>
+<img src="C:\Users\Akhilesh\OneDrive\Desktop\web photo\a.jpg" height=150 width=150 style="margin-top:30px; margin-right:-160px ;" id=img3>
+</div>
+<div>
+<img src="C:\Users\Akhilesh\OneDrive\Desktop\web photo\c.jpg" height=150 width=150 style="margin-top:-150px; margin-right:150px ;" id=img4>
+</div>
+
+<input type=button onClick="swap()" value=swapImg>
+</center>
+</body>
+</html>

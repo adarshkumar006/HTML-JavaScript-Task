@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>password strnth</title>
+<script>
+function check()
+{
+  let pswd=(document.getElementById("pass").value);
+ let hasLower = /[a-z]/.test(pswd);
+ let hasDigit = /[0-9]/.test(pswd);
+ let hasSymbol =/[^a-zA-Z0-9]/.test(pswd);
+if(hasDigit && !hasLower &&  !hasSymbol)
+{
+document.getElementById("result").innerHTML="<h3>"+"weak password"+"</h3>";
+}
+else if(hasLower && hasDigit &&  !hasSymbol)
+{
+document.getElementById("result").innerHTML="<h3>"+"modrate password"+"</h3>";
+}
+else if(hasLower && hasDigit &&  hasSymbol)
+{
+document.getElementById("result").innerHTML="<h3>"+"strong password"+"</h3>";
+}
+else
+{
+document.getElementById("result").innerHTML="<h3>"+"please enter valid syntax"+"</h3>";
+
+}
+}
+</script>
+</head>
+<body>
+<center>
+<fieldset style="height:120px; width:120px; border-style:solid; background-color:cyan;">
+<h1></h1>
+password:<input type=text id=pass onKeyUp="check()" ><br><br>
+<p id=result style="color: red; font-weight: bold;"></p>
+</fieldset>
+</center>
+</body>
+</html>

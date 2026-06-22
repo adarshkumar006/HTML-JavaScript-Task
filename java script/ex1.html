@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>js example</title>
+</head>
+<body>
+<script>
+var num,days,years=0;
+num=parseInt(prompt("enter the num:"));
+if(num>=365)
+{
+ years=parseInt(num/365);
+    
+    document.write("years is="+years);
+    
+    months=num%365;
+	month=parseInt(months/30)
+    document.write("<br>month is="+month);
+	
+	days=months%30;
+    document.write("<br>days is="+days);
+	
+}
+else
+{
+document.write("<br>years is="+years);
+months=num%365;
+	month=parseInt(months/30)
+    document.write("<br>month is="+month);
+	
+	days=months%30;
+    document.write("<br>days is="+days);
+	
+}
+
+
+</script>
+</body>
+</html>

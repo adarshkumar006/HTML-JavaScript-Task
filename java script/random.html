@@ -1,0 +1,65 @@
+<html>
+<head>
+<title>random task </title>
+<script>
+let correct;
+let count=0
+let c=0
+
+    function rand(){
+let ops = ["+", "-", "*", "/"];
+let op = ops[Math.floor(Math.random() * ops.length)];
+let a=Math.round(Math.random()*100);
+let b=Math.round(Math.random()*100);
+document.getElementById("result").innerHTML = a + " " + op + " " + b;
+
+    switch (op) {
+        case "+":
+          correct = a + b; break;
+        case "-":   
+          correct = a - b; break;
+        case "*": 
+           correct = a * b; break;
+        case "/": 
+          correct = a / b; break;
+    }
+}
+
+   function Answer()  
+              {
+        
+ let txt=document.getElementById("text").value;
+if(txt==correct)
+{
+
+document.getElementById("val").innerHTML="<span style='color:green;'>correct👍👍</span>";
+document.getElementById("value").innerHTML=(count++)+1;
+
+}
+else
+{
+document.getElementById("val").innerHTML="<span style='color:red;'>Incorrect⚠️⚠️⚠️ </span>";
+document.getElementById("value").innerHTML=(c++)+1;
+
+
+}
+}
+
+</script>
+</head>
+<body>
+<center>
+<h1>Quiz type Questions!!</h1><hr style="height:6px; width:30%; background-color:red">
+<h3 >Quiz Start</h3>
+
+<p id=result></p>
+<input type=text style="width:50px;border:3px solid blue;" name=text id=text><br><br>
+<h3 id=val></h3><h3 id=value></h3>
+
+
+<input type=button value="Next Ques.."  onClick=rand()>
+<input type="button" value="Answer" onClick="Answer()">
+
+</center>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<html>
+<head>
+<title> swapcase</title>
+<script>
+    function changeLower()
+		{
+   var val=document.getElementById("text");
+    val.value=val.value.toLowerCase();
+}
+    function changeUpper()
+		{
+ var val=document.getElementById("text");
+    val.value=val.value.toUpperCase();
+}
+
+</script>
+</head>
+<body>
+<center>
+<h1>*Swapcase String*</h1><hr  style="height:5px; width:40%; background-color:blue;">
+<span style="font-size:20">Enter String::</span>
+<input type=text name=text id=text placeholder="Enter String..." style="height:30px; width:30%; border:2px solid; font-size:20px"><br><br><br>
+<input type=button value=LowerCase onClick=changeLower() style="background-color:yellow; height:30px; font-size:15px">
+<input type=button value=UpperCase onClick=changeUpper() style="background-color:cyan; height:30px; font-size:15px">
+
+</center>
+</body>
+</html>

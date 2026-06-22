@@ -1,0 +1,179 @@
+<!doctype html>
+<html>
+<head>
+<title> chess board</title>
+</head>
+<body>
+<svg height=580 width=100% style="border:3px solid black">
+<defs>
+<radialgradient id=rdgt r=100% cx=50% cy=50% fx=50% f50%>
+<stop offset=2% stop-color=white />
+<stop offset=50% stop-color=black/>
+</radialgradient>
+</defs>
+
+<rect height=580 width=98% stroke=black fill=url(#rdgt)></rect>
+<g>
+
+<defs>
+<pattern id=patr1  width=100 height=100 patternunits=userSpaceOnUse>
+<rect x=0 y=0 width=50 height=50 fill=cyan></rect>
+<rect x=50 y=0 width=60 height=50 fill=white></rect>
+<rect x=0 y=50 width=60 height=50 fill=white></rect>
+<rect x=50 y=50 width=60 height=50 fill=cyan></rect>
+
+</pattern>
+</defs>
+
+<circle cx=1050 cy=390 r=127 stroke=cyan fill=url(#patr1)></circle>
+<text x=840 y=485 stroke=black stroke-width=0 fill=black font-size=110>&#9816;</text>
+<text x=883 y=485 stroke=black stroke-width=0 fill=black font-size=210>&#9817;</text>
+<text x=1020 y=483 stroke=black stroke-width=0 fill=black font-size=120>&#9813;</text>
+<text x=1130 y=483 stroke=white stroke-width=1 fill=black font-size=200>&#9824;</text>
+<text x=50 y=90 stroke=red fill=white font-size=45>chess is not always about winner...</text>
+<text x=50 y=150 stroke=green fill=white font-size=45>sometimes it's simply about..</text>
+<text x=50 y=210 stroke=cyan  stroke-width=0 fill=cyan font-size=45>learning and so is life</text>
+<animate attributename="opacity" from=1 to=0 dur=5s fill=freeze></animate>
+
+</g>
+<g>
+<g>
+<defs>
+<pattern id=rect width=260 height=260 patternunits=userSpaceOnUse>
+<rect x=0 y=0 width=130 height=130 fill=white></rect>
+<rect x=130 y=0 width=130 height=130 fill=black></rect>
+<rect x=0 y=130 width=130 height=130 fill=black></rect>
+<rect x=130 y=130 width=130 height=130 fill=white></rect>
+
+</pattern>
+</defs>
+
+<rect x=400 y=10 height=1030 width=1500 stroke=purple stroke-width=5 fill=url(#rect)></rect>
+
+<animatetransform attributename=transform type=scale from=0 0 to=3.1 3.1 dur=10s repeateCount=indefinite fill=freeze end=2.5 2.5  additive="sum" id=rect></animatetransform>
+ </g>
+  <animateTransform 
+        attributeName="transform"
+        type="rotate"
+        from="0 300 300"
+        to="270 600 300"
+        dur="10s"
+        repeatCount=""
+        additive="sum"
+        fill="freeze" />
+<animate attributename="opacity" from=0 to=1 dur=5s fill=freeze></animate>
+</g>
+
+<--!first-->
+<g>
+<text x=307 y=195 stroke=white fill=gray font-size=100 opacity="0" >&#9823 <animate attributename="opacity" from=0 to=1 begin=10s dur=5s fill=freeze ></animate>
+<animatetransform attributename="transform" type=translate from="0 0" to="0 100" begin=30s dur=4s fill=freeze ></animatetransform>
+
+</text>
+<text x=407 y=195 stroke=gray fill=gray font-size=100 opacity="0">&#9823 <animate attributename="opacity" from=0 to=1 begin=11s dur=5s fill=freeze ></animate>
+</text>
+<text x=507 y=195 stroke=white fill=gray font-size=100 opacity="0" >&#9823 <animate attributename="opacity" from=0 to=1 begin=12s dur=5s fill=freeze ></animate>
+</text>
+<text x=607 y=195 stroke=gray fill=gray font-size=100 opacity="0">&#9823 <animate attributename="opacity" from=0 to=1 begin=13s dur=5s fill=freeze ></animate>
+<animatetransform attributename="transform" type=translate from="0 0" to="0 100" begin=28s dur=4s fill=freeze ></animatetransform>
+
+</text>
+<text x=707 y=195 stroke=white fill=gray font-size=100 opacity="0" >&#9823 <animate attributename="opacity" from=0 to=1 begin=14s dur=5s fill=freeze ></animate>
+</text>
+<text x=807 y=195 stroke=gray fill=gray font-size=100 opacity="0" >&#9823 <animate attributename="opacity" from=0 to=1 begin=15s dur=5s fill=freeze ></animate>
+</text>
+<text x=907 y=195 stroke=white fill=gray font-size=100 opacity="0" >&#9823 <animate attributename="opacity" from=0 to=1 begin=16s dur=5s fill=freeze ></animate>
+</text>
+<text x=1007 y=195 stroke=gray fill=gray font-size=100 opacity="0">&#9823 <animate attributename="opacity" from=0 to=1 begin=17s dur=5s fill=freeze ></animate>
+</text>
+
+<--!second-->
+<text x=307 y=495 stroke=red fill=red font-size=100 opacity="0" >&#9823 <animate attributename="opacity" from=0 to=1 begin=10s dur=5s fill=freeze ></animate>
+</text>
+<text x=407 y=495 stroke=red fill=red font-size=100 opacity="0">&#9823<animate attributename="opacity" from=0 to=1 begin=11s dur=5s fill=freeze ></animate>
+</text>
+<text x=507 y=495 stroke=red fill=red font-size=100 opacity="0">&#9823<animate attributename="opacity" from=0 to=1 begin=12s dur=5s fill=freeze ></animate>
+<animatetransform attributename="transform" type=translate from="0 0" to="-100 -100" begin=28s dur=4s fill=freeze ></animatetransform>
+
+</text>
+<text x=607 y=495 stroke=red fill=red font-size=100 opacity="0">&#9823
+<animate attributename="opacity" from=0 to=1 begin=13s dur=5s fill=freeze ></animate>
+</text>
+<text x=707 y=495 stroke=red fill=red font-size=100 opacity="0">&#9823 <animate attributename="opacity" from=0 to=1 begin=14s dur=5s fill=freeze ></animate>
+</text>
+<text x=807 y=495 stroke=red fill=red font-size=100 opacity="0">&#9823 <animate attributename="opacity" from=0 to=1 begin=15s dur=5s fill=freeze ></animate>
+<animatetransform attributename="transform" type=translate from="0 0" to="0 -100" begin=29s dur=4s fill=freeze ></animatetransform>
+
+</text>
+<text x=907 y=495 stroke=red fill=red font-size=100 opacity="0">&#9823
+<animate attributename="opacity" from=0 to=1 begin=16s dur=5s fill=freeze ></animate>
+</text>
+<text x=1007 y=495 stroke=red fill=red font-size=100 opacity="0">&#9823
+<animate attributename="opacity" from=0 to=1 begin=17s dur=5s fill=freeze ></animate>
+</text>
+
+
+</g>
+<--!top-->
+<g id=diece>
+<text x=307 y=95 stroke=gray stroke-width=3 fill=gray font-size=100 opacity="0" >&#9814
+<animate attributename="opacity" from=0 to=1 begin=18s dur=5s fill=freeze ></animate>
+</text>
+<text x=407 y=95 stroke=gray fill=gray font-size=100 opacity="0">&#9816
+<animate attributename="opacity" from=0 to=1 begin=19s dur=5s fill=freeze ></animate>
+</text>
+<text x=507 y=85 stroke=gray stroke-width=5 fill=gray font-size=90 opacity="0">&#9815
+<animate attributename="opacity" from=0 to=1 begin=20s dur=5s fill=freeze ></animate>
+</text>
+<text x=607 y=95 stroke=gray fill=gray font-size=90 opacity="0">&#9813
+<animate attributename="opacity" from=0 to=1 begin=21s dur=5s fill=freeze ></animate>
+</text>
+<text x=707 y=95 stroke=gray stroke-width=5 fill=gray font-size=90 opacity="0">&#9812
+<animate attributename="opacity" from=0 to=1 begin=22s dur=5s fill=freeze ></animate>
+</text>
+<text x=807 y=85 stroke=gray stroke-width=5 fill=gray font-size=90 opacity="0">&#9815
+<animate attributename="opacity" from=0 to=1 begin=23s dur=5s fill=freeze ></animate>
+</text>
+<text x=907 y=95 stroke=gray fill=gray font-size=100 opacity="0" >&#9816
+<animate attributename="opacity" from=0 to=1 begin=24s dur=5s fill=freeze ></animate>
+</text>
+<text x=1007 y=95 stroke=gray stroke-width=3  fill=gray font-size=100 opacity="0">&#9814
+<animate attributename="opacity" from=0 to=1 begin=25s dur=5s fill=freeze ></animate>
+<animatetransform attributename="transform" type=translate from="0 0" to="0 200" begin=26s dur=4s fill=freeze ></animatetransform>
+
+</text>
+
+
+<text x=307 y=585 stroke=red stroke-width=3 fill=red font-size=100 opacity="0">&#9814
+<animate attributename="opacity" from=0 to=1 begin=18s dur=5s fill=freeze ></animate>
+</text>
+<text x=407 y=585 stroke=red fill=red font-size=100 opacity="0">&#9816
+<animate attributename="opacity" from=0 to=1 begin=19s dur=5s fill=freeze ></animate>
+</text>
+<text x=507 y=585 stroke=red stroke-width=5 fill=red font-size=90 opacity="0">&#9815
+<animate attributename="opacity" from=0 to=1 begin=20s dur=5s fill=freeze ></animate>
+</text>
+<text x=607 y=585 stroke=red fill=red font-size=90 opacity="0">&#9813
+<animate attributename="opacity" from=0 to=1 begin=21s dur=5s fill=freeze ></animate>
+</text>
+<text x=707 y=585 stroke=red stroke-width=5 fill=red font-size=90 opacity="0">&#9812
+<animate attributename="opacity" from=0 to=1 begin=22s dur=5s fill=freeze ></animate>
+</text>
+<text x=807 y=585 stroke=red stroke-width=5 fill=red font-size=90 opacity="0">&#9815
+<animate attributename="opacity" from=0 to=1 begin=23s dur=5s fill=freeze ></animate>
+</text>
+<text x=907 y=585 stroke=red fill=red font-size=100 opacity="0" >&#9816
+<animate attributename="opacity" from=0 to=1 begin=24s dur=5s fill=freeze ></animate>
+</text>
+<text x=1007 y=585 stroke=red stroke-width=3  fill=red font-size=100 opacity="0">&#9814
+<animate attributename="opacity" from=0 to=1 begin=25s dur=5s fill=freeze ></animate> 
+<animatetransform attributename="transform" type=translate from="0 0" to="0 -200" begin=31s dur=4s fill=freeze ></animatetransform>
+
+</text>
+<animate attributename="opacity" opacity=0 from=0 to=1 begin=rect.end dur=5s fill=freeze id=diece ></animate>
+
+</g>
+
+</svg>
+</body>
+</html>

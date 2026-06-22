@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>word frequency</title>
+<script>
+function printChar(){
+var n=prompt("enter the name:");
+var count={};
+for(i=0;i<n.length;i++)
+{
+var ch=n.charAt(i);
+if(count[ch]){
+
+count[ch]++;
+}
+else{
+     count[ch]=1;
+}
+}
+for( ch in count){
+document.write(ch + "=" +count[ch]+"<br>");
+}
+}
+</script>
+</head>
+<body onLoad="printChar()">
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<title>odi logo</title>
+<script>
+	function draw()
+			{
+	var ctx=document.getElementById("mycanvas").getContext("2d");
+ctx.lineWidth=8;
+ctx.beginPath();
+ctx.arc(100,200,60,0,(370*3.14/180),false);
+ctx.stroke();
+ctx.beginPath();
+ctx.arc(200,200,60,0,(370*3.14/180),false);
+ctx.stroke();
+ctx.beginPath();
+ctx.arc(300,200,60,0,(370*3.14/180),false);
+ctx.stroke();
+ctx.beginPath();
+ctx.arc(400,200,60,0,(370*3.14/180),false);
+ctx.stroke();
+
+ctx.stroke();
+}
+			
+
+</script>
+</head>
+<body onLoad=draw()>
+<canvas id="mycanvas" name="canvas" height=500 width=600 style="border:3px solid red"></canvas>
+</body>
+</html>

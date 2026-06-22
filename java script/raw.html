@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>random task</title>
+
+<script>
+function rand() {
+    let ops = ["+", "-", "*", "/"];
+    let op = ops[Math.floor(Math.random() * ops.length)];
+
+    let a = Math.round(Math.random() * 100);
+    let b = Math.round(Math.random() * 100);
+
+    document.getElementById("text").value = a + " " + op + " " + b;
+}
+</script>
+</head>
+
+<body onload="rand()">
+<center>
+<input type="text" id="text">
+</center>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+<title>adidas logo</title>
+<script>
+	function draw()
+			{
+	var ctx=document.getElementById("mycanvas").getContext("2d");
+
+  
+
+ctx.beginPath();
+ctx.font="25px Sans-serif";
+ctx.fillText("R",392,268);
+
+ctx.beginPath();
+ctx.font="bold 100px Sans-serif";
+ctx.fillText("adidas",100,350);
+ctx.arc(400,260,15,0,(360*3.14/180),false);
+ctx.stroke();
+
+ctx.beginPath();
+  ctx.fillStyle="black";
+  ctx.lineWidth=10;
+    ctx.moveTo(165,230);
+    ctx.lineTo(120,270);
+    ctx.lineTo(175,270);
+
+     ctx.closePath();
+    ctx.fill();
+
+ctx.beginPath();
+  ctx.fillStyle="black";
+  ctx.lineWidth=10;
+    ctx.moveTo(180,218);
+    ctx.lineTo(198,270);
+    ctx.lineTo(250,270);
+    ctx.lineTo(220,190);
+     ctx.closePath();
+    ctx.fill();
+
+ctx.beginPath();
+  ctx.fillStyle="black";
+  ctx.lineWidth=10;
+    ctx.moveTo(280,150);
+    ctx.lineTo(240,180);
+    ctx.lineTo(280,270);
+     ctx.lineTo(330,270);
+
+        ctx.closePath();
+    ctx.fill();
+
+
+}
+</script>
+</head>
+<body onLoad=draw()>
+<canvas id="mycanvas" name="canvas" height=500 width=600 style="border:3px solid red"></canvas>
+</body>
+</html>

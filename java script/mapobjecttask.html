@@ -1,0 +1,57 @@
+<html>
+<head>
+<title>To-do list using map object</title>
+<script>
+let rec=new Map();
+function saverec(){
+var key1=document.getElementById("t1").value;
+var value1=document.getElementById("t2").value;
+rec.set(key1,value1);
+showrecord();
+}
+function remove1(){
+ let clr=document.getElementById("res").value;
+ rec.clear(clr);
+showrecord();
+}
+ function updateval(key){
+   
+    let value = rec.get(key);
+   document.getElementById("t1").value = key;
+   document.getElementById("t2").value = value;
+ 
+ }
+ function delete1(key){
+    if(confirm("Are you want to delete")){
+		rec.delete(key);
+showrecord();
+}
+ }
+ function showrecord(){
+	
+	let 	record=" ";
+	for(let[k,v]of rec){
+	
+	record +=k + ":" + v +
+`<button onclick="updateval('${k}')">Update</button>`+
+	`<button onclick="delete1('${k}')">delete</button>`+"<br>";
+	}
+	document.getElementById("res").innerHTML=record;
+ } 
+ 
+</script>
+
+</head>
+<body>
+<center>
+<h1>CRUD Operation(MAP)</h1><hr style="height:10px; width:350px; background-color:red">
+<fieldset style="width:300px; background-color:cyan;">
+key:<input type=text   placeholder="Enter the key..." id="t1"><br><br>
+value:<input type=text  placeholder="Enter the value..." id="t2"><br><br>
+<input type="button" value="save" onClick="saverec()">
+<input type="button" value="remove" onClick="remove1()">
+<p id="res"></p>
+</fieldset>
+</center>
+</body>
+</html>

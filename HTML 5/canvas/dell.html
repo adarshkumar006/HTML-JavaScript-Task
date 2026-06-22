@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<title>DELL logo</title>
+<script>
+function draw() {
+              var ctx=document.getElementById("mycanvas").getContext("2d");
+ 
+ ctx.strokeStyle="blue";
+ctx.lineWidth=5;
+ ctx.arc(200,200,100,0,(360*3.14/180),false);
+ctx.stroke();
+   
+   ctx.beginPath();
+    ctx.font = "bold 70px Arial";
+    ctx.fillStyle = "blue";
+    ctx.fillText("D", 100,220);    
+    ctx.fillText("L", 210,220);
+    ctx.fillText("L", 252,220);
+    ctx.closePath();
+     ctx.beginPath();
+    ctx.font = "bold 70px Arial";
+
+    ctx.rotate((-40*3.14/180));
+    ctx.fillText("E",-10,290); 
+}
+</script>
+</head>
+
+
+<body onload="draw()">
+ <canvas id="mycanvas" name="canvas" height="400" width="600" style="border:3px solid red;">
+</canvas>
+</body>
+</html>

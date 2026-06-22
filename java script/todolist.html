@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>to do list</title>
+<script>
+	function addvalue(){
+			
+ let val=document.getElementById("t1").value;	
+ document.getElementById("res").innerHTML+=
+"<div>" +
+"<span style='font-size:30px;'>"+val+"</span>"+ 
+" <input type='button' name=b1 onClick='deletevalue(this)'value=Del>"+
+"<input type='button' name=b2 onClick='editvalue(this)'value=Edit>"+
+"</div>";
+}
+ function deletevalue(btn){
+    if(confirm("Do you want to delete?")){
+        btn.parentNode.remove();
+    }
+}
+function editvalue(btn) {
+    let text = btn.parentNode.querySelector("span").innerText;
+    document.getElementById("t1").value = text;
+}
+</script>
+</head>
+<body>
+<center>
+<fieldset style="width: 300px;border: 3px solid blue; ">
+<h1>To Do-List</h1>
+Enter Name:<input type=text name=t1 id=t1><br><br>
+<input type="button" name=b1 onClick="addvalue()" value=Add>
+
+<p id="res"></p>
+</fieldset>
+</center>
+</body>
+</html>

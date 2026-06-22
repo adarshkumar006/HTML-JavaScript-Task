@@ -1,0 +1,20 @@
+<html> 
+<head>
+<title>swap logic 2</title>
+</head>
+<body>
+<script>
+var n=parseInt(prompt("enter the number"))
+if(n>9999)
+alert("input in limit 4 digit");
+else if(n<999)
+alert("input in limit 4 digit not 3");
+else
+l=n%10
+mid=n%100
+r=mid/100
+result=l*1000+mid
+document.write(result)
+</script>
+</body>
+</html>

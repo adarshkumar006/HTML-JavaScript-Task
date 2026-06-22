@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+<title>my name</title>
+<script>
+     
+	function draw(){
+		
+var ctx=document.getElementById("mycanvas").getContext("2d");
+
+
+ctx.beginPath();
+ctx.fillStyle = "blue";
+ctx.fillRect(150, 100, 100, 100);   
+ctx.closePath();
+ctx.stroke();
+
+ctx.beginPath();
+ctx.fillStyle = "blue";
+ctx.fillRect(250, 200, 100, 100);   
+ctx.closePath();
+ctx.stroke();
+
+
+ctx.beginPath();
+ctx.arc(250,200,130,0,(360*3.14/180),false);
+ctx.lineWidth=60;
+ctx.closePath();
+ctx.stroke();
+
+ctx.beginPath();
+ctx.font = "bold 75px Arial";
+ctx.fillStyle = "white";
+ctx.fillText("M", 215, 97);
+ctx.closePath();
+
+ctx.beginPath();
+ctx.font = "bold 70px Arial";
+ctx.fillStyle = "white";
+ctx.rotate((-46*3.14/180));
+ctx.fillText("B",-0, 215);
+ctx.closePath();
+
+ctx.beginPath();
+ctx.font = "bold 70px Arial";
+ctx.fillStyle = "white";
+ctx.rotate((90*3.14/180));
+ctx.fillText("W",295, -132);
+ctx.closePath();
+
+ ctx.beginPath();
+ctx.arc(319,-30,165,0,(360*3.14/180),false);
+ctx.lineWidth = 3;
+  ctx.strokeStyle = "black";
+  ctx.stroke();
+  ctx.closePath();
+
+}
+</script>
+</head>
+<body onLoad="draw();">
+<center>
+<canvas id="mycanvas" name="canvas" height="400" width="800" style="border:2px solid red">
+
+
+<center>
+</center>
+</body>
+</html>

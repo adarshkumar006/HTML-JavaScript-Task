@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>validate email</title>
+<script>
+function showName()
+	 {
+	  var name = document.getElementById("myName").value;
+ let hasGmail = /gmail\.com/.test(name); 
+  let isFormat = /^[a-zA-Z0-9]/.test(name);
+
+if(hasGmail && isFormat){ 
+  document.getElementById("result").innerHTML = "Your email is valid";
+}
+else { 
+  document.getElementById("result").innerHTML = "Your email is invalid";
+}
+
+}
+</script>
+</head>
+<body>
+<center>
+<h1> Email validation:</h1><hr style="height: 10px; width:60%; background-color: red; border: none;">
+
+
+
+<h3>Enter your Email:</h3>
+
+<input type="text" id="myName" placeholder="Enter your email"><br><br>
+
+<button onclick="showName()">Click Me</button>
+
+<h3 id="result" style="color: blue; font-weight: bold;"></h3>
+</center>
+</body>
+</html>

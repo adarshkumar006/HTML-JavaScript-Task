@@ -1,0 +1,63 @@
+<html>
+<head>
+<title>calculator</title>
+<script>
+
+	function calc(){
+	
+	     t1.value=eval(t1.value);
+	}
+	function set(obj){
+
+		t1.value=t1.value+obj.value;
+}
+	function remove(){
+
+		t1.value="";
+}
+
+</script>
+</head>
+<body bgcolor=cyan>
+<center>
+<h1>Calculator</h1>
+
+<input type=text id=t1 name=t1 placeholder=0   style="height:50px; width:200px; text-align:right; font-size:25px;"><br><br>
+
+<input type=button onClick=set(this) value=1 style="height:40px; width:40px; background-color:red; color:white;" onmouseover="this.style.backgroundColor='green'" onmouseout="this.style.backgroundColor='red'">
+
+
+<input type=button onClick=set(this) value=2 style="height:40px; width:40px; background-color:red; color:white" onmouseover="this.style.backgroundColor='green'" onmouseout="this.style.backgroundColor='red'">
+
+<input type=button onClick=set(this) value=3 style="height:40px; width:40px; background-color:red; color:white" onmouseover="this.style.backgroundColor='green'" onmouseout="this.style.backgroundColor='red'">
+
+<input type=button onClick=set(this) value=* style="height:40px; width:40px; background-color:red; color:white" onmouseover="this.style.backgroundColor='green'" onmouseout="this.style.backgroundColor='red'"><br><br>
+
+<input type=button onClick=set(this) value=4 style="height:40px; width:40px; background-color:red; color:white" onmouseover="this.style.backgroundColor='green'" onmouseout="this.style.backgroundColor='red'">
+
+<input type=button onClick=set(this) value=5 style="height:40px; width:40px; background-color:red; color:white" onmouseover="this.style.backgroundColor='green'" onmouseout="this.style.backgroundColor='red'">
+
+<input type=button onClick=set(this) value=6 style="height:40px; width:40px; background-color:red; color:white" onmouseover="this.style.backgroundColor='green'" onmouseout="this.style.backgroundColor='red'">
+
+<input type=button onClick=set(this) value=+ style="height:40px; width:40px; background-color:red; color:white" onmouseover="this.style.backgroundColor='green'" onmouseout="this.style.backgroundColor='red'"><br><br>
+
+<input type=button onClick=set(this) value=7 style="height:40px; width:40px; background-color:red; color:white" onmouseover="this.style.backgroundColor='green'" onmouseout="this.style.backgroundColor='red'">
+<input type=button onClick=set(this) value=8 style="height:40px; width:40px; background-color:red; color:white" onmouseover="this.style.backgroundColor='green'" onmouseout="this.style.backgroundColor='red'">
+
+<input type=button onClick=set(this) value=9 style="height:40px; width:40px; background-color:red; color:white" onmouseover="this.style.backgroundColor='green'" onmouseout="this.style.backgroundColor='red'">
+
+<input type=button onClick=set(this) value=- style="height:40px; width:40px; background-color:red; color:white" onmouseover="this.style.backgroundColor='green'" onmouseout="this.style.backgroundColor='red'"><br><br>
+
+<input type=button onClick=set(this) value=% style="height:40px; width:40px; background-color:red; color:white" onmouseover="this.style.backgroundColor='green'" onmouseout="this.style.backgroundColor='red'">
+
+<input type=button onClick=set(this) value=0 style="height:40px; width:40px; background-color:red; color:white" onmouseover="this.style.backgroundColor='green'" onmouseout="this.style.backgroundColor='red'">
+
+<input type=button onClick=set(this) value=/ style="height:40px; width:40px; background-color:red; color:white" onmouseover="this.style.backgroundColor='green'" onmouseout="this.style.backgroundColor='red'">
+
+<input type=button onClick=calc() value="=" style="height:40px; width:40px; background-color:red; color:white" onmouseover="this.style.backgroundColor='green'" onmouseout="this.style.backgroundColor='red'"><br><br>
+
+<input type=button onClick=remove() value=Clear style="height:40px; width:60px; background-color:red; color:white" onmouseover="this.style.backgroundColor='green'" onmouseout="this.style.backgroundColor='red'">
+
+</center>
+</body>
+</html>

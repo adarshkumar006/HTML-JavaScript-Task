@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>condition task</title>
+</head>
+<body>
+<script>
+var gen,exp;
+ gen=prompt("enter the gender:")
+if(gen=="M"|| gen=="m"){
+exp=parseInt(prompt("enter the experience:"));
+if(exp>=10){
+var TA=20/100*50000;
+var DA=40/100*50000;
+var HRA=15/100*50000;
+var Gross_salary=TA+DA+HRA+50000;
+document.write("gross salary is of male:" + Gross_salary);
+}
+else{
+document.write("No exp of ten year");
+}
+}
+else if(gen=="F"|| gen=="f")
+{
+var exp=parseInt(prompt("enter the experience:"));
+if(exp>=5)
+{
+var TA=15/100*50000;
+var DA=20/100*50000;
+var HRA=15/100*50000;
+
+var Gross_salary=TA+DA+HRA+50000;
+
+document.write("gross salary is of female:" + Gross_salary)
+}
+else{
+document.write("No exp of five year");
+}
+}
+else{
+document.write("invalid grnder");
+}
+</script>
+</body>
+</html>
